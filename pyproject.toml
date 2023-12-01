@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "adventofcode2023"
+version = "0.1.0"
+description = ""
+authors = ["Yohann MARTIN <contact@codexus.fr>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.6"
+mypy = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by ruff
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex,
+    "W191",  # indentation contains tabs
+    "B904"   # Opinionated warning on exception chaining
+]
+
+[tool.ruff.format]
+line-ending = "lf"
+quote-style = "double"
+indent-style = "space"
