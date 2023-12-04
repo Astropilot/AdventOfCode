@@ -36,7 +36,7 @@ for n in numbers:
 
 print(f"Result: {sum_numbers}")  # Result: 525181
 
-# Code golf
+# One liner (code golf for fun)
 # fmt: off
 (lambda lines:print(sum([sum([int(m.group(0))for m in re.finditer(r"\d+",L)if sum(0<=a<len(lines)and 0<=b<len(lines[a])and lines[a][b]!="."and lines[a][b]!="\n"and not lines[a][b].isdigit()for a,b in[(i,m.start()-1),(i,m.end())]+[(i-1,j)for j in range(m.start()-1,m.end()+1)]+[(i+1,j)for j in range(m.start()-1,m.end()+1)])])for i,L in enumerate(lines)])))(open("input").readlines())
 # fmt: on
