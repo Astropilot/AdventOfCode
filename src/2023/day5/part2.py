@@ -127,15 +127,6 @@ while line_pos < len(lines):
     line_pos += 1
 
 
-def get_destination_from_mapping(
-    source: int, mapping: list[tuple[int, int, int]]
-) -> int:
-    for m in mapping:
-        if m[0] <= source <= m[1]:
-            return m[2] + (source - m[0])
-    return source
-
-
 def intervals_to_mapped_groups(
     intervals: list[tuple[int, int]], mapping: list[tuple[int, int, int]]
 ) -> list[tuple[int, int]]:
