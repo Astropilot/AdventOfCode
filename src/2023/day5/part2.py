@@ -36,32 +36,12 @@ def read_mapping(
 
 line_pos = 2
 
-assert lines[line_pos] == "seed-to-soil map:"
-
 line_pos = read_mapping(line_pos, lines, seed_to_soil_mapping)
-
-assert lines[line_pos] == "soil-to-fertilizer map:"
-
 line_pos = read_mapping(line_pos, lines, soil_to_fertilizer_mapping)
-
-assert lines[line_pos] == "fertilizer-to-water map:"
-
 line_pos = read_mapping(line_pos, lines, fertilizer_to_water_mapping)
-
-assert lines[line_pos] == "water-to-light map:"
-
 line_pos = read_mapping(line_pos, lines, water_to_light_mapping)
-
-assert lines[line_pos] == "light-to-temperature map:"
-
 line_pos = read_mapping(line_pos, lines, light_to_temperature_mapping)
-
-assert lines[line_pos] == "temperature-to-humidity map:"
-
 line_pos = read_mapping(line_pos, lines, temperature_to_humidity_mapping)
-
-assert lines[line_pos] == "humidity-to-location map:"
-
 line_pos = read_mapping(line_pos, lines, humidity_to_location_mapping)
 
 
