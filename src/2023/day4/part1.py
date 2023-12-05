@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-contents = Path(Path(__file__).parent, "input").read_text()
+contents = Path(Path(__file__).parent, "sample").read_text()
 
 sum_cards_worth = 0
 for line in contents.split("\n"):
@@ -25,5 +25,15 @@ print(f"Result: {sum_cards_worth}")  # Result: 22193
 # One liner (code golf for fun)
 # fmt: off
 print(
+    sum(
+        [
+            (lambda ns: len(ns))([
+                n
+                for n in list(map(int, L.split(":")[1].split("|")[1].strip().replace('  ', ' ').split(' ')))
+                if n in map(int, L.split(":")[1].split("|")[0].strip().replace('  ', ' ').split(' '))
+            ])
+            for L in open("sample")
+        ]
+    )
 )
 # fmt: on
