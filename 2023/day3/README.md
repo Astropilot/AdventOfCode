@@ -17,7 +17,8 @@ The engineer explains that an engine part seems to be missing from the engine, b
 The engine schematic (your puzzle input) consists of a visual representation of the engine. There are lots of numbers and symbols you don't really understand, but apparently **any number adjacent to a symbol**, even diagonally, is a "part number" and should be included in your sum. (Periods (`.`) do not count as a symbol.)
 
 Here is an example engine schematic:
-```
+
+```text
 467..114..
 ...*......
 ..35..633.
@@ -47,7 +48,8 @@ The missing part wasn't the only issue - one of the gears in the engine is wrong
 This time, you need to find the gear ratio of every gear and add them all up so that the engineer can figure out which gear needs to be replaced.
 
 Consider the same engine schematic again:
-```
+
+```text
 467..114..
 ...*......
 ..35..633.

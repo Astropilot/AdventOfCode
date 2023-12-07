@@ -17,7 +17,8 @@ You barely have time to agree to this request when he brings up another. "While 
 The almanac (your puzzle input) lists all of the seeds that need to be planted. It also lists what type of soil to use with each kind of seed, what type of fertilizer to use with each kind of soil, what type of water to use with each kind of fertilizer, and so on. Every type of seed, soil, fertilizer and so on is identified with a number, but numbers are reused by each category - that is, soil `123` and fertilizer `123` aren't necessarily related to each other.
 
 For example:
-```
+
+```text
 seeds: 79 14 55 13
 
 seed-to-soil map:
@@ -61,7 +62,7 @@ Rather than list every source number and its corresponding destination number on
 
 Consider again the example `seed-to-soil map`:
 
-```
+```text
 50 98 2
 52 50 48
 ```
@@ -73,7 +74,8 @@ The second line means that the source range starts at `50` and contains `48` val
 Any source numbers that **aren't mapped** correspond to the **same** destination number. So, seed number `10` corresponds to soil number `10`.
 
 So, the entire list of seed numbers and their corresponding soil numbers looks like this:
-```
+
+```text
 seed  soil
 0     0
 1     1
@@ -113,7 +115,7 @@ Everyone will starve if you only plant such a small number of seeds. Re-reading 
 
 The values on the initial `seeds:` line come in pairs. Within each pair, the first value is the **start** of the range and the second value is the **length** of the range. So, in the first line of the example above:
 
-```
+```text
 seeds: 79 14 55 13
 ```
 
