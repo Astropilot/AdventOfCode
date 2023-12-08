@@ -1,4 +1,5 @@
 import re
+from math import lcm
 from pathlib import Path
 
 contents = Path(Path(__file__).parent, "input").read_text()
@@ -13,17 +14,25 @@ for line in lines[2:]:
 
     mapping[m.group(1)] = [m.group(2), m.group(3)]
 
-current_nodes = list(filter(lambda n: n[2] == "A", mapping.keys()))
-steps = 0
+starting_nodes = list(filter(lambda n: n[2] == "A", mapping.keys()))
+steps_list: list[int] = []
 
-print("initial nodes", current_nodes)
+print("starting_nodes", starting_nodes)
 
-while not all(n[2] == "Z" for n in current_nodes):
-    instruction = instructions[steps % len(instructions)]
+for node in starting_nodes:
+    current_node = node
+    steps = 0
 
-    current_nodes = [mapping[n][instruction] for n in current_nodes]
-    steps += 1
+    while current_node[2] != "Z":
+        instruction = instructions[steps % len(instructions)]
 
-    # print("current_nodes", current_nodes)
+        current_node = mapping[current_node][instruction]
+        steps += 1
 
-print(f"Result: {steps}")  # Result:
+    print(f"Steps for node {node} to node {current_node}: {steps}")
+
+    steps_list.append(steps)
+
+total_steps = lcm(*steps_list)
+
+print(f"Result: {total_steps}")  # Result: 10371555451871
