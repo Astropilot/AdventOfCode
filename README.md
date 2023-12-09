@@ -16,4 +16,5 @@ The solutions are posted the same day, but at the end of the day so as not to in
 |  6  |   ⭐   |   ⭐   |                               [🔗](./2023/day6)                             |
 |  7  |   ⭐   |   ⭐   |                               [🔗](./2023/day7)                             |
 |  8  |   ⭐   |   ⭐   |                               [🔗](./2023/day8)                             |
-|  9  |   ⌛   |   ⌛   |                                      ⌛                                     |
+|  9  |   ⭐   |   ⭐   |                               [🔗](./2023/day9)                             |
+| 10  |   ⌛   |   ⌛   |                                      ⌛                                     |
