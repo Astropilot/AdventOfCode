@@ -10,7 +10,8 @@ ranges = [(seeds[i], seeds[i] + seeds[i + 1]) for i in range(0, len(seeds) - 1, 
 for block in lines_blocks[1:]:
     next_start = 0
     mapping: list[tuple[int, int, int]] = [
-        tuple(map(int, line.split(" "))) for line in block[1:]
+        tuple(map(int, line.split(" ")))  # type: ignore
+        for line in block[1:]
     ]
     full_mapping: list[tuple[int, int, int]] = []
 
@@ -21,7 +22,7 @@ for block in lines_blocks[1:]:
             full_mapping.append((next_start, next_start, src_start - next_start + 1))
         full_mapping.append((dst_start, src_start, length))
         next_start = src_start + length
-    full_mapping.append((next_start, next_start, math.inf))
+    full_mapping.append((next_start, next_start, math.inf))  # type: ignore
 
     next_ranges: list[tuple[int, int]] = []
     for range_start, range_end in ranges:
