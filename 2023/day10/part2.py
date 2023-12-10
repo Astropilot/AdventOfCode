@@ -1,6 +1,6 @@
 from pathlib import Path
 
-contents = Path(Path(__file__).parent, "sample1_part2").read_text()
+contents = Path(Path(__file__).parent, "sample3_part2").read_text()
 lines = contents.split("\n")
 
 adjacency_list: dict[tuple[int, int], list[tuple[int, int]]] = {}
@@ -85,3 +85,75 @@ while not finished:
 
     if path_loop[-1] == start:
         finished = True
+
+tiles_count = 0
+founds: list[tuple[int, int]] = []
+
+for y in range(len(lines)):
+    for x in range(len(lines[y])):
+        if (x, y) in path_loop:
+            continue
+
+        x_count = len(
+            list(
+                filter(
+                    lambda p: p[1] == y and p[0] < x and lines[p[1]][p[0]] == "|",
+                    path_loop,
+                )
+            )
+        )
+        x_count2 = len(
+            list(
+                filter(
+                    lambda p: p[1] == y and p[0] < x and lines[p[1]][p[0]] == "|",
+                    path_loop,
+                )
+            )
+        ) - len(
+            list(
+                filter(
+                    lambda p: p[1] == y and p[0] < x and lines[p[1]][p[0]] == "|",
+                    path_loop,
+                )
+            )
+        )
+
+        if x_count % 2 == 0:
+            continue
+
+        y_count = len(
+            list(
+                filter(
+                    lambda p: p[0] == x and p[1] < y and lines[p[1]][p[0]] != "|",
+                    path_loop,
+                )
+            )
+        )
+
+        if y_count % 2 == 0:
+            continue
+
+        tiles_count += 1
+        founds.append((x, y))
+        print(f"found: {(x, y)}")
+
+debugs = {
+    "F": "┌",
+    "7": "┐",
+    "L": "└",
+    "J": "┘",
+    "|": "│",
+    "-": "─",
+    "S": "S",
+}
+for y in range(len(lines)):
+    for x in range(len(lines[y])):
+        if (x, y) in path_loop:
+            print(debugs[lines[y][x]], end="")
+        elif (x, y) in founds:
+            print("1", end="")
+        else:
+            print("0", end="")
+    print()
+
+print(f"Result: {tiles_count}")  # Result:
