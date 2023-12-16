@@ -1,63 +1,51 @@
-# from functools import cache
+from functools import cache
 from pathlib import Path
 
-contents = Path(Path(__file__).parent, "sample").read_text()
+contents = Path(Path(__file__).parent, "input").read_text()
 lines = contents.split("\n")
 
 
-# @cache
-def rec_arrangements(
-    springs_with_start: tuple[str, int], contiguous: tuple[int, ...]
-) -> list[tuple[str, int]]:
-    if len(contiguous) == 1:
-        n = contiguous[0]
-        possibilities: list[tuple[str, int]] = []
-        springs = springs_with_start[0]
-        start = springs_with_start[1]
+@cache
+def rec_arrangements(springs: str, contiguous: tuple[int, ...]) -> int:
+    n = contiguous[0]
+    possibilities: int = 0
 
-        for i in range(start, len(springs) - (n - 1)):
-            possibility = springs
+    needed_space = n
+    for m in contiguous[1:]:
+        needed_space += 1 + m
 
-            if i - 1 >= start:
-                if possibility[i - 1] == "#":
-                    continue
-                if possibility[i - 1] == "?":
-                    possibility = possibility[: i - 1] + "." + possibility[i:]
-            if (i + n) <= len(possibility) - 1:
-                if possibility[i + n] == "#":
-                    continue
-                if possibility[i + n] == "?":
-                    possibility = possibility[: i + n] + "." + possibility[i + n + 1 :]
+    try:
+        max_idx = springs.index("#") + 1
+    except ValueError:
+        max_idx = len(springs) - (n - 1)
 
-            if "." in possibility[i : i + n]:
+    for i in range(max_idx):
+        if i + needed_space > len(springs):
+            break
+
+        possibility = springs
+
+        if i - 1 >= 0:
+            if possibility[i - 1] == "#":
                 continue
+            if possibility[i - 1] == "?":
+                possibility = possibility[: i - 1] + "." + possibility[i:]
+        if (i + n) <= len(possibility) - 1:
+            if possibility[i + n] == "#":
+                continue
+            if possibility[i + n] == "?":
+                possibility = possibility[: i + n] + "." + possibility[i + n + 1 :]
 
-            possibility = (
-                possibility[:i].replace("?", ".") + ("#" * n) + possibility[i + n :]
-            )
+        if "." in possibility[i : i + n]:
+            continue
 
-            assert len(possibility) == len(springs)
+        if len(contiguous) > 1:
+            possibilities += rec_arrangements(springs[i + n + 1 :], contiguous[1:])
+        else:
+            if "#" not in springs[i + n + 1 :]:
+                possibilities += 1
 
-            possibilities.append((possibility, i + n))
-            # for j in range(n):
-            #     if possibility[i + j] == "?":
-            #         possibility = possibility[: i + j] + "#" + possibility[i + j + 1 :]
-
-        return possibilities
-    else:
-        possibilities: list[tuple[str, int]] = [springs_with_start]
-        for cont in contiguous:
-            new_possibilities: list[tuple[str, int]] = []
-
-            for possibility in possibilities:
-                new_possibilities.extend(rec_arrangements(possibility, (cont,)))
-
-            # print(f"For {cont}:")
-            # for p in new_possibilities:
-            #     print(f"\t{p}")
-            possibilities = new_possibilities
-
-        return possibilities
+    return possibilities
 
 
 sum_arrangements = 0
@@ -73,13 +61,9 @@ for line in lines:
         new_contiguous_groups.extend(contiguous_groups)
     contiguous_groups = new_contiguous_groups
 
-    # springs = tuple([s for s in springs_conditions.split(".") if len(s) > 0])
+    arrangements = rec_arrangements(springs_conditions, tuple(contiguous_groups))
 
-    arrangements = rec_arrangements((springs_conditions, 0), tuple(contiguous_groups))
-
-    print(f"{springs_conditions} {contiguous_groups} - {len(arrangements)}")
-
-    sum_arrangements += len(arrangements)
+    sum_arrangements += arrangements
 
 
-print(f"Result: {sum_arrangements}")  # Result: 6827
+print(f"Result: {sum_arrangements}")  # Result: 1537505634471
