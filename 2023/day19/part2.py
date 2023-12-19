@@ -32,7 +32,7 @@ def constraints_to_perms(constraints: dict[str, tuple[int, int]]) -> int:
 
 
 def search_permutations(
-    constraints: dict[str, tuple[int, int]], rules: list[tuple[str | None, str]], n: int
+    constraints: dict[str, tuple[int, int]], rules: list[tuple[str | None, str]]
 ) -> int:
     permutations = 0
     constraints_copy = constraints.copy()
@@ -43,7 +43,7 @@ def search_permutations(
                 permutations += constraints_to_perms(constraints_copy)
             elif rule[1] != "R":
                 permutations += search_permutations(
-                    constraints_copy, workflows[rule[1]], n + 1
+                    constraints_copy, workflows[rule[1]]
                 )
         else:
             key = rule[0][0]
@@ -61,7 +61,7 @@ def search_permutations(
                 permutations += constraints_to_perms(rule_constraints)
             elif rule[1] != "R":
                 permutations += search_permutations(
-                    rule_constraints, workflows[rule[1]], n + 1
+                    rule_constraints, workflows[rule[1]]
                 )
 
     return permutations
@@ -74,6 +74,6 @@ start: dict[str, tuple[int, int]] = {
     "s": (1, 4000),
 }
 
-result = search_permutations(start, workflows["in"], 0)
+result = search_permutations(start, workflows["in"])
 
 print(f"Result: {result}")  # Result: 136146366355609
