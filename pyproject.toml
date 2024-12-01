@@ -5,14 +5,16 @@ description = ""
 authors = ["Yohann MARTIN <contact@codexus.fr>"]
 license = "MIT"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.10"
-shapely = "^2.0.2"
+python = "^3.12"
+shapely = "^2.0.6"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.1.6"
-mypy = "^1.7.1"
+ruff = "^0.7.4"
+mypy = "^1.13.0"
+types-shapely = "^2.0.0.20241112"
 
 [build-system]
 requires = ["poetry-core"]
@@ -23,23 +25,27 @@ strict = true
 
 [tool.ruff]
 indent-width = 4
-
-target-version = "py310"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = [
-    "E",  # pycodestyle errors
-    "W",  # pycodestyle warnings
-    "F",  # pyflakes
-    "I",  # isort
-    "C",  # flake8-comprehensions
-    "B",  # flake8-bugbear
-    "UP", # pyupgrade
+    "E",        # pycodestyle errors
+    "W",        # pycodestyle warnings
+    "F",        # pyflakes
+    "I",        # isort
+    "C",        # flake8-comprehensions
+    "B",        # flake8-bugbear
+    "UP",       # pyupgrade,
+    "N",        # pep8-naming
+    "S",        # flake8-bandit
+    "ASYNC",    # flake8-async
+    "DTZ",      # flake8-datetimez
+    "PTH",      # flake8-use-pathlib
+    "RUF",      # Ruff-specific rules
 ]
 ignore = [
     "E501",  # line too long, handled by ruff
     "B008",  # do not perform function calls in argument defaults
-    "C901",  # too complex,
     "W191",  # indentation contains tabs
     "B904"   # Opinionated warning on exception chaining
 ]
