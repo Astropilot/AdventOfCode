@@ -28,5 +28,5 @@ print(f"Result: {sum_calib}")  # Result: 54265
 # One liner (code golf for fun)
 # fmt: off
 p=["one","two","three", "four","five","six","seven","eight","nine"]
-print(sum([(n[0]*10)+n[-1]for n in[[int(L[i])if L[i].isdigit()else[j+1for j in range(len(p))if L[i:].startswith(p[j])][0]for i in range(len(L))if L[i].isdigit()or any(L[i:].startswith(s) for s in p)]for L in open("input")]]))
+print(sum([(n[0]*10)+n[-1]for n in[[int(L[i])if L[i].isdigit()else[j+1 for j in range(len(p))if L[i:].startswith(p[j])][0]for i in range(len(L))if L[i].isdigit()or any(L[i:].startswith(s) for s in p)]for L in open("input")]]))
 # fmt: on

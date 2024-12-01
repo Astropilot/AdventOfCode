@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from shapely.geometry import Polygon  # type: ignore
+from shapely.geometry import Polygon
 
 contents = Path(Path(__file__).parent, "input").read_text()
 lines = contents.split("\n")
@@ -31,8 +31,8 @@ for line in lines:
 
 points = points[:-1]
 
-poly = Polygon(points)  # type: ignore
+poly = Polygon(points)
 
-total_size = (nb_points / 2) + poly.area  # type: ignore
+total_size = (nb_points / 2) + poly.area
 
 print(f"Result: {total_size}")  # Result: 95356
