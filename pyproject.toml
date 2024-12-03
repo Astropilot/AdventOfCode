@@ -12,7 +12,7 @@ python = "^3.12"
 shapely = "^2.0.6"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.7.4"
+ruff = "^0.8.1"
 mypy = "^1.13.0"
 types-shapely = "^2.0.0.20241112"
 
