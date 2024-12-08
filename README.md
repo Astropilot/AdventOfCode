@@ -13,7 +13,7 @@ This repository contains my solutions for the [advent of code](https://adventofc
 |  5  |   ⭐   |   ⭐   |                               [🔗](./aoc_2024/day5)                             |
 |  6  |   ⭐   |   ⭐   |                               [🔗](./aoc_2024/day6)                             |
 |  7  |   ⭐   |   ⭐   |                               [🔗](./aoc_2024/day7)                             |
-|  8  |   ⌛   |   ⌛   |                               [🔗](./aoc_2024/day8)                             |
+|  8  |   ⭐   |   ⭐   |                               [🔗](./aoc_2024/day8)                             |
 |  9  |   ⌛   |   ⌛   |                               [🔗](./aoc_2024/day9)                             |
 |  10 |   ⌛   |   ⌛   |                               [🔗](./aoc_2024/day10)                            |
 |  11 |   ⌛   |   ⌛   |                               [🔗](./aoc_2024/day11)                            |
