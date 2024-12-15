@@ -47,7 +47,8 @@ ignore = [
     "E501",  # line too long, handled by ruff
     "B008",  # do not perform function calls in argument defaults
     "W191",  # indentation contains tabs
-    "B904"   # Opinionated warning on exception chaining
+    "B904",  # Opinionated warning on exception chaining
+    "S101",  # Asserts
 ]
 
 [tool.ruff.format]
