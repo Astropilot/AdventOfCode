@@ -1,3 +1,4 @@
+import math
 import typing as t
 from dataclasses import dataclass
 from pathlib import Path
@@ -13,7 +14,7 @@ class Monkey:
     inspections: int = 0
 
 
-with Path(Path(__file__).parent, "sample").open() as f:
+with Path(Path(__file__).parent, "input").open() as f:
     lines = [line.rstrip("\n") for line in f]
 
 monkeys: list[Monkey] = []
@@ -52,7 +53,9 @@ def reverse_operation(
     return item
 
 
-for round in range(10000):
+factor = math.prod(monkey.test for monkey in monkeys)
+
+for __ in range(10000):
     for monkey in monkeys:
         while len(monkey.items):
             monkey.inspections += 1
@@ -67,29 +70,11 @@ for round in range(10000):
                 item *= op
             else:
                 item += op
+            item = item % factor
             monkey_dest = monkey.test_result[item % monkey.test == 0]
-
-            # if item % monkey.test == 0:
-            #     item = monkey.test
-            # else:
-            #     #     item = item
-            #     item = reverse_operation(
-            #         item,
-            #         monkeys[monkey_dest].operation_operator,
-            #         monkeys[monkey_dest].operation_operand,
-            #     )
-            # TODO
 
             monkeys[monkey_dest].items.append(item)
 
-    if round + 1 in (1, 20, 1000):
-        print(f"== After round {round+1} ==")
-        for idx, monkey in enumerate(monkeys):
-            print(f"Monkey {idx} inspected items {monkey.inspections} times.")
-    # print(f"== After round {round+1} ==")
-    # for idx, monkey in enumerate(monkeys):
-    #     print(f"Monkey {idx} items: {monkey.items}")
-
 r = sorted(monkeys, key=lambda m: m.inspections, reverse=True)
 
-print(f"Result: {r[0].inspections * r[1].inspections}")  # Result:
+print(f"Result: {r[0].inspections * r[1].inspections}")  # Result: 25738411485
