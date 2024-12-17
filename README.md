@@ -97,7 +97,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
 |  1  |   ⭐   |   ⭐   |   [🔗](./aoc_2021/day1)    |
-|  2  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day2)    |
+|  2  |   ⭐   |   ⭐   |   [🔗](./aoc_2021/day2)    |
 |  3  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day3)    |
 |  4  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day4)    |
 |  5  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day5)    |
