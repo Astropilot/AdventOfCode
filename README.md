@@ -99,7 +99,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  1  |   ⭐   |   ⭐   |   [🔗](./aoc_2021/day1)    |
 |  2  |   ⭐   |   ⭐   |   [🔗](./aoc_2021/day2)    |
 |  3  |   ⭐   |   ⭐   |   [🔗](./aoc_2021/day3)    |
-|  4  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day4)    |
+|  4  |   ⭐   |   ⌛   |   [🔗](./aoc_2021/day4)    |
 |  5  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day5)    |
 |  6  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day6)    |
 |  7  |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day7)    |
