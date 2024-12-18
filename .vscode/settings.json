@@ -3,11 +3,12 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
-            "source.organizeImports.ruff": "always"
+            "source.organizeImports": "explicit"
         }
     },
     "ruff.fixAll": false,
     "ruff.importStrategy": "fromEnvironment",
+    "ruff.organizeImports": true,
     "python.analysis.typeCheckingMode": "off",
     "mypy.runUsingActiveInterpreter": true,
     "ruff.lint.args": [
