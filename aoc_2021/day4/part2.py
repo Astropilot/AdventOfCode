@@ -6,18 +6,7 @@ from pathlib import Path
 class Board:
     grid: list[list[int]]
     marked: list[list[bool]]
-    winned: bool
-
-    def __repr__(self) -> str:
-        r = ""
-
-        for n in self.grid:
-            r += str(n) + "\n"
-        r += "\n"
-        for i in self.marked:
-            r += str(i) + "\n"
-
-        return r
+    winned: tuple[int, int] | None
 
     def mark_number(self, n: int) -> None:
         for y in range(len(self.grid)):
@@ -58,7 +47,7 @@ for line in lines[1:]:
     if line == "":
         if board is not None:
             boards.append(board)
-        board = Board([], [], False)
+        board = Board([], [], None)
         continue
     numbers_row = list(map(int, filter(lambda n: n != "", line.split(" "))))
 
@@ -66,24 +55,25 @@ for line in lines[1:]:
     board.marked.append([False for _ in range(len(numbers_row))])
 boards.append(board)
 
-finished = False
-score = 0
+winning_idx = 1
 for number in numbers_to_draw:
-    for board in filter(lambda b: not b.winned, boards):
+    boards_left = [b for b in boards if b.winned is None]
+    for board in boards_left:
         board.mark_number(number)
 
         if board.is_winning():
-            print(f"[n={number}] Winning board:")
-            print(board)
-            board.winned = True
+            board.winned = (winning_idx, number)
+            winning_idx += 1
 
-            if len([b for b in boards if not b.winned]) == 0:
-                score = number * board.score()
-                finished = True
-            break
-    if finished:
+    if len(boards_left) == 0:
         break
 
-print(f"Result: {score}")  # Result:
+boards_s = sorted(
+    [b for b in boards if b.winned is not None],
+    key=lambda b: b.winned[0],  # type: ignore
+    reverse=True,
+)
+last_winner = boards_s[0]
+assert last_winner.winned is not None
 
-# TODO: Rewrite to keep history of latest winner if not everyone is winner after exhausting all numbers
+print(f"Result: {last_winner.winned[1] * last_winner.score()}")  # Result: 2634
