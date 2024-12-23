@@ -28,7 +28,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  20 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day20)   |
 |  21 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day21)   |
 |  22 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day22)   |
-|  23 |   ⌛   |   ⌛   |   [🔗](./aoc_2024/day23)   |
+|  23 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day23)   |
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2024/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2024/day25)   |
 
