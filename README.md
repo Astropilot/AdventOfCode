@@ -30,7 +30,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  22 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day22)   |
 |  23 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day23)   |
 |  24 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day24)   |
-|  25 |   ⭐   |   ⌛   |   [🔗](./aoc_2024/day25)   |
+|  25 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day25)   |
 
 ## 2023
 
