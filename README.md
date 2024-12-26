@@ -2,7 +2,7 @@
 
 This repository contains my solutions in Python3 for the [Advent of Code](https://adventofcode.com/).
 
-## 2024
+## \[2024] 50⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -32,7 +32,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day24)   |
 |  25 |   ⭐   |   ⭐   |   [🔗](./aoc_2024/day25)   |
 
-## 2023
+## \[2023] 37⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -62,7 +62,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2023/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2023/day25)   |
 
-## 2022
+## \[2022] 22⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -92,7 +92,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2022/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2022/day25)   |
 
-## 2021
+## \[2021] 24⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -122,7 +122,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2021/day25)   |
 
-## 2020
+## \[2020] 23⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -152,7 +152,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day25)   |
 
-## 2019
+## \[2019] 0⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -182,7 +182,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day25)   |
 
-## 2018
+## \[2018] 0⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -212,7 +212,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2018/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2018/day25)   |
 
-## 2017
+## \[2017] 0⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -242,7 +242,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day25)   |
 
-## 2016
+## \[2016] 0⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -272,7 +272,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2016/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2016/day25)   |
 
-## 2015
+## \[2015] 0⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
