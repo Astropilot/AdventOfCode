@@ -136,7 +136,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  8  |   ⭐   |   ⭐   |   [🔗](./aoc_2020/day8)    |
 |  9  |   ⭐   |   ⭐   |   [🔗](./aoc_2020/day9)    |
 |  10 |   ⭐   |   ⭐   |   [🔗](./aoc_2020/day10)   |
-|  11 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day11)   |
+|  11 |   ⭐   |   ⭐   |   [🔗](./aoc_2020/day11)   |
 |  12 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day12)   |
 |  13 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day13)   |
 |  14 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day14)   |
