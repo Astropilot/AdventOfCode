@@ -14,4 +14,4 @@ for m in re.findall(r"(don't\(\))|(mul\((\d+),(\d+)\))|(do\(\))", contents):
     elif enabled:
         total += int(m[2]) * int(m[3])
 
-print(f"Result: {total}")  # Result: 84893551
+print(f"Result: {total}")

@@ -14,4 +14,4 @@ for _ in range(80):
         fishes[idx] = fish - 1
     fishes.extend(new_fishes)
 
-print(f"Result: {len(fishes)}")  # Result: 389726
+print(f"Result: {len(fishes)}")

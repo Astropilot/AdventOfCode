@@ -76,4 +76,4 @@ boards_s = sorted(
 last_winner = boards_s[0]
 assert last_winner.winned is not None
 
-print(f"Result: {last_winner.winned[1] * last_winner.score()}")  # Result: 2634
+print(f"Result: {last_winner.winned[1] * last_winner.score()}")

@@ -36,4 +36,4 @@ result = 0
 for i in range(len(cards)):
     result += count_winning_cards(cards, i)
 
-print(f"Result: {result}")  # Result: 5625994
+print(f"Result: {result}")

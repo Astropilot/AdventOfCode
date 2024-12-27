@@ -38,4 +38,4 @@ for y in range(len(grid)):
             positions = find_hiking_trails(x, y, 1)
             score += len(positions)
 
-print(f"Result: {score}")  # Result: 688
+print(f"Result: {score}")

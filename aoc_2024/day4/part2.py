@@ -39,4 +39,4 @@ for y in range(len(grid)):
             xmas_counter += 1
 
 
-print(f"Result {xmas_counter}")  # Result: 1950
+print(f"Result {xmas_counter}")

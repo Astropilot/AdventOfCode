@@ -36,4 +36,4 @@ for design in designs:
     memory: dict[int, int] = {}
     total_designs_arrangements += count_design_arrangements(design, 0, patterns, memory)
 
-print(f"Result: {total_designs_arrangements}")  # Result: 712058625427487
+print(f"Result: {total_designs_arrangements}")

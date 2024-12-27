@@ -11,4 +11,4 @@ for entry in lines:
         if len(digit) in (2, 4, 3, 7):
             total_digits += 1
 
-print(f"Result: {total_digits}")  # Result: 470
+print(f"Result: {total_digits}")

@@ -67,4 +67,4 @@ for entry in lines:
 
     total_output += int(output_str)
 
-print(f"Result: {total_output}")  # Result: 989396
+print(f"Result: {total_output}")

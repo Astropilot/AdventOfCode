@@ -59,4 +59,4 @@ for region in regions:
 
     total_price += area * perimeter
 
-print(f"Result: {total_price}")  # Result: 1431316
+print(f"Result: {total_price}")

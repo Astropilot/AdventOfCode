@@ -23,4 +23,4 @@ for bit_idx in range(len(lines[0])):
 
 result = int(gamma_rate_b, 2) * int(epsilon_rate_b, 2)
 
-print(f"Result: {result}")  # Result: 841526
+print(f"Result: {result}")

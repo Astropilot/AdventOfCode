@@ -17,4 +17,4 @@ for line in lines:
 
     total_priority += priority[inter]
 
-print(f"Result: {total_priority}")  # Result: 7763
+print(f"Result: {total_priority}")

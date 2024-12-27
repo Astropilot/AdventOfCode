@@ -38,4 +38,4 @@ for i in range(len(expanded)):
         break
     checksum += i * expanded[i]
 
-print(f"Result: {checksum}")  # Result: 6421128769094
+print(f"Result: {checksum}")

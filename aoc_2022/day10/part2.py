@@ -32,5 +32,3 @@ for cycle in range(1, 240 + 1, 1):
 
     last_count = int(lines[i_program].split(" ")[1])
     i_program += 1
-
-# Result: PBZGRAZA

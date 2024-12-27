@@ -14,4 +14,4 @@ for window1, window2 in pairwise(windows):
     if window2 > window1:
         increase_count += 1
 
-print(f"Result: {increase_count}")  # Result: 1262
+print(f"Result: {increase_count}")

@@ -23,4 +23,4 @@ for line in lines:
     val = sum(s[-1] for s in sequences) + history[-1]
     sum_vals += val
 
-print(f"Result: {sum_vals}")  # Result: 2098530125
+print(f"Result: {sum_vals}")

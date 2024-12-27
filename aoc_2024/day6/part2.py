@@ -105,4 +105,4 @@ for position in positions:
 
     grid[position[1]][position[0]] = tmp
 
-print(f"Result: {count_possible_positions}")  # Result: 1711
+print(f"Result: {count_possible_positions}")

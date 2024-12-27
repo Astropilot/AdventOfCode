@@ -13,4 +13,4 @@ for col in range(len(lines[0])):
         elif lines[i][col] == "#":
             next_available_i = i + 1
 
-print(f"Result {sum_loads}")  # Result: 105982
+print(f"Result {sum_loads}")

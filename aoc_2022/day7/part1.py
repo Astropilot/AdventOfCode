@@ -64,4 +64,4 @@ def count_folder(node: TreeNode) -> int:
 
 count_folder(root)
 
-print(f"Result: {total_size}")  # Result: 1844187
+print(f"Result: {total_size}")

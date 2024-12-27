@@ -119,4 +119,4 @@ for code in lines:
 
     total_complexities += len(sequences3[0]) * int(code.replace("A", ""), 10)
 
-print(f"Result: {total_complexities}")  # Result: 202648
+print(f"Result: {total_complexities}")

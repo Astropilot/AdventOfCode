@@ -77,4 +77,4 @@ for y in range(len(map_count)):
         if len(map_count[y][x][1]) > 0:
             tiles_energized += 1
 
-print(f"Result: {tiles_energized}")  # Result: 7951
+print(f"Result: {tiles_energized}")

@@ -33,4 +33,4 @@ while i_line < len(lines) - 2:
 
     i_line += 4
 
-print(f"Result: {total_token}")  # Result: 93217456941970
+print(f"Result: {total_token}")

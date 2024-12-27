@@ -17,4 +17,4 @@ for crab_position in range(0, max(crabs)):
 
 
 result = min(fuel_per_position.values())
-print(f"Result: {result}")  # Result: 88612508
+print(f"Result: {result}")

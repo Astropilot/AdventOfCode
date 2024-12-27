@@ -145,4 +145,4 @@ for code in lines:
 
     total_complexities += min(seq_lens) * int(code.replace("A", ""), 10)
 
-print(f"Result: {total_complexities}")  # Result: 248919739734728
+print(f"Result: {total_complexities}")

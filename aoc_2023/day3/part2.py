@@ -55,4 +55,4 @@ for pg in filter(lambda s: s[2], symbols):
             sum_gear_ratio += parts[0][2] * parts[1][2]
 
 
-print(f"Result: {sum_gear_ratio}")  # Result: 84289137
+print(f"Result: {sum_gear_ratio}")

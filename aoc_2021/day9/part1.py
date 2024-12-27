@@ -19,4 +19,4 @@ for y in range(HEIGHT):
         if is_low:
             total_risk_levels += 1 + grid[y][x]
 
-print(f"Result: {total_risk_levels}")  # Result: 545
+print(f"Result: {total_risk_levels}")

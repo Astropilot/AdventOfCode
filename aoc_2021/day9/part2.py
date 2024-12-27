@@ -66,4 +66,4 @@ for point in low_points:
 largest_basins = sorted(basins_sizes, reverse=True)[:3]
 result = reduce(operator.mul, largest_basins, 1)
 
-print(f"Result: {result}")  # Result: 950600
+print(f"Result: {result}")

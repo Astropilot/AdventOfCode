@@ -27,4 +27,4 @@ for line in lines:
 
     sum_vals += val
 
-print(f"Result: {sum_vals}")  # Result: 1016
+print(f"Result: {sum_vals}")

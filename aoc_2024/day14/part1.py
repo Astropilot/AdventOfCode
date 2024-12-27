@@ -49,4 +49,4 @@ for q in quadrants:
         )
     )
 
-print(f"Result: {safety_factor}")  # Result: 230172768
+print(f"Result: {safety_factor}")

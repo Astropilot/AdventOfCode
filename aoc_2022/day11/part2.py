@@ -77,4 +77,4 @@ for __ in range(10000):
 
 r = sorted(monkeys, key=lambda m: m.inspections, reverse=True)
 
-print(f"Result: {r[0].inspections * r[1].inspections}")  # Result: 25738411485
+print(f"Result: {r[0].inspections * r[1].inspections}")

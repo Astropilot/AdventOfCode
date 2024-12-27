@@ -89,4 +89,4 @@ for y in range(len(grid)):
         if grid[y][x] == "[":
             total_distance += (y * 100) + x
 
-print(f"Result: {total_distance}")  # Result: 1437468
+print(f"Result: {total_distance}")

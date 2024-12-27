@@ -16,4 +16,4 @@ for line in lines:
     elif second_range[0] >= first_range[0] and second_range[1] <= first_range[1]:
         total_pairs_overlap += 1
 
-print(f"Result: {total_pairs_overlap}")  # Result: 483
+print(f"Result: {total_pairs_overlap}")

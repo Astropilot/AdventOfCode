@@ -122,4 +122,4 @@ for y in range(len(lines)):
             founds.append((x, y))
             tiles_count += 1
 
-print(f"Result: {tiles_count}")  # Result: 445
+print(f"Result: {tiles_count}")

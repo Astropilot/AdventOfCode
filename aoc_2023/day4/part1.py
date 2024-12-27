@@ -20,4 +20,4 @@ for line in contents.split("\n"):
 
     sum_cards_worth += card_worth
 
-print(f"Result: {sum_cards_worth}")  # Result: 22193
+print(f"Result: {sum_cards_worth}")

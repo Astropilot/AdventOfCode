@@ -48,4 +48,4 @@ for block in blocks:
 
     sum_patterns += cols + (100 * rows)
 
-print(f"Result: {sum_patterns}")  # Result: 37718
+print(f"Result: {sum_patterns}")

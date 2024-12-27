@@ -30,4 +30,4 @@ for c in crates:
     if len(c) > 0:
         message += c[-1]
 
-print(f"Result: {message}")  # Result: SPFMVDTZT
+print(f"Result: {message}")

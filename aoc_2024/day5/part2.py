@@ -41,4 +41,4 @@ for line in lines[delimiter + 1 :]:
 
     total += int(update[len(update) // 2])
 
-print(f"Result: {total}")  # Result: 4655
+print(f"Result: {total}")

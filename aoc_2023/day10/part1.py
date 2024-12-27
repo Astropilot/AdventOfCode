@@ -86,4 +86,4 @@ while not finished:
     if path_loop[-1] == start:
         finished = True
 
-print(f"Result: {len(path_loop) // 2}")  # Result: 7145
+print(f"Result: {len(path_loop) // 2}")

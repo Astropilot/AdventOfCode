@@ -19,4 +19,4 @@ for _ in range(25):
 
     stones = new_stones
 
-print(f"Result: {len(stones)}")  # Result: 185205
+print(f"Result: {len(stones)}")

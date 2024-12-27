@@ -76,4 +76,4 @@ start: dict[str, tuple[int, int]] = {
 
 result = search_permutations(start, workflows["in"])
 
-print(f"Result: {result}")  # Result: 136146366355609
+print(f"Result: {result}")

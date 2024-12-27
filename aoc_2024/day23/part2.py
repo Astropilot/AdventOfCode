@@ -38,4 +38,4 @@ max_clique = next(c for c in cliques if len(c) == max_clique_size)
 
 password = ",".join(sorted(max_clique))
 
-print(f"Result: {password}")  # Result: aw,fk,gv,hi,hp,ip,jy,kc,lk,og,pj,re,sr
+print(f"Result: {password}")

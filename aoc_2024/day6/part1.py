@@ -46,4 +46,4 @@ while (0 <= guard_pos[0] < width) and (0 <= guard_pos[1] < height):
 
     guard_positions.add(guard_pos)
 
-print(f"Result: {len(guard_positions)-1}")  # Result: 41
+print(f"Result: {len(guard_positions)-1}")

@@ -30,4 +30,4 @@ for line in lines:
 
 r = len([m for m, c in coords_count.items() if c >= 2])
 
-print(f"Result: {r}")  # Result: 7436
+print(f"Result: {r}")

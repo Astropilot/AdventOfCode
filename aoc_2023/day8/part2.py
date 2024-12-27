@@ -35,4 +35,4 @@ for node in starting_nodes:
 
 total_steps = lcm(*steps_list)
 
-print(f"Result: {total_steps}")  # Result: 10371555451871
+print(f"Result: {total_steps}")

@@ -8,4 +8,4 @@ right_list = [int(i[1]) for i in lines_splitted]
 
 similarity = sum(item * right_list.count(item) for item in left_list)
 
-print(f"Result: {similarity}")  # Result: 26407426
+print(f"Result: {similarity}")

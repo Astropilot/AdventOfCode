@@ -56,4 +56,4 @@ for _ in range(100):
             if grid[y][x] > 9:
                 grid[y][x] = 0
 
-print(f"Result: {total_flash}")  # Result: 1652
+print(f"Result: {total_flash}")

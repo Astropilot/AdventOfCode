@@ -53,4 +53,4 @@ for y in range(height):
         if scenic_score > highest_scenic_score:
             highest_scenic_score = scenic_score
 
-print(f"Result: {highest_scenic_score}")  # Result: 334880
+print(f"Result: {highest_scenic_score}")

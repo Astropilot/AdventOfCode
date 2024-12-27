@@ -80,4 +80,4 @@ for u in path[1:]:
         score += 1000
     prev = u
 
-print(f"Result: {score}")  # Result: 98416
+print(f"Result: {score}")

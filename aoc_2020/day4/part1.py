@@ -29,4 +29,4 @@ if all(
 ):
     valid_passports += 1
 
-print(f"Result: {valid_passports}")  # Result: 222
+print(f"Result: {valid_passports}")

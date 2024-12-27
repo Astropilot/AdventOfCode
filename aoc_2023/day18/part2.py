@@ -37,4 +37,4 @@ poly = Polygon(points)
 
 total_size = (nb_points / 2) + poly.area
 
-print(f"Result: {total_size}")  # Result: 92291468914147
+print(f"Result: {total_size}")

@@ -34,4 +34,4 @@ count = 0
 for stone in stones:
     count += count_stones(stone, 1, 75)
 
-print(f"Result: {count}")  # Result: 221280540398419
+print(f"Result: {count}")

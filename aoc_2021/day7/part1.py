@@ -15,4 +15,4 @@ for crab_position in range(0, max(crabs)):
     fuel_per_position[crab_position] = fuel_needed
 
 result = min(fuel_per_position.values())
-print(f"Result: {result}")  # Result: 326132
+print(f"Result: {result}")

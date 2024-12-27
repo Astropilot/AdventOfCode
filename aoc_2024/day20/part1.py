@@ -97,4 +97,4 @@ for tile in path:
             if saved >= 100:
                 count_highest_cheats += 1
 
-print(f"Result: {count_highest_cheats}")  # Result: 1454
+print(f"Result: {count_highest_cheats}")

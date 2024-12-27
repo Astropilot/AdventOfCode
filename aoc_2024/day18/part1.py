@@ -62,4 +62,4 @@ else:
         steps += 1
         current = previous[current]
 
-    print(f"Result: {steps}")  # Result: 232
+    print(f"Result: {steps}")

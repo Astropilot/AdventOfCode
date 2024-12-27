@@ -23,4 +23,4 @@ for line in lines:
             total_test += test
             break
 
-print(f"Result: {total_test}")  # Result: 4122618559853
+print(f"Result: {total_test}")

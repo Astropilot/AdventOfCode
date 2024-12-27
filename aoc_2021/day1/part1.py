@@ -9,4 +9,4 @@ for depth1, depth2 in pairwise(depths):
     if depth2 > depth1:
         increase_count += 1
 
-print(f"Result: {increase_count}")  # Result:
+print(f"Result: {increase_count}")

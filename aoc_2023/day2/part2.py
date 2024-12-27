@@ -13,4 +13,4 @@ for line in contents.split("\n"):
 
     sum_power += max_colors["r"] * max_colors["g"] * max_colors["b"]
 
-print(f"Result: {sum_power}")  # Result: 56322
+print(f"Result: {sum_power}")

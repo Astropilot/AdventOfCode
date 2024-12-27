@@ -52,4 +52,4 @@ for y in range(len(grid)):
         if grid[y][x] == "O":
             total_distance += (y * 100) + x
 
-print(f"Result: {total_distance}")  # Result: 1437174
+print(f"Result: {total_distance}")

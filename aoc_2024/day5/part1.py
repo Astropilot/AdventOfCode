@@ -27,4 +27,4 @@ for line in lines[delimiter + 1 :]:
     if update_correct:
         total += int(update[len(update) // 2])
 
-print(f"Result: {total}")  # Result: 4959
+print(f"Result: {total}")

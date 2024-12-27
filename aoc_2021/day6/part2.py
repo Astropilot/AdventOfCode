@@ -20,4 +20,4 @@ for _ in range(256):
 
     fishes_per_life = new_fishes_per_life
 
-print(f"Result: {sum(fishes_per_life.values())}")  # Result: 1743335992042
+print(f"Result: {sum(fishes_per_life.values())}")

@@ -22,4 +22,4 @@ for report in reports:
         report_counter += 1
 
 
-print(f"Result: {report_counter}")  # Result: 407
+print(f"Result: {report_counter}")

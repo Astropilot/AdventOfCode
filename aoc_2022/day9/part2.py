@@ -65,4 +65,4 @@ for line in lines:
             current_head = tail
 
 
-print(f"Result: {len(tail_visited)}")  # Result: 2516
+print(f"Result: {len(tail_visited)}")

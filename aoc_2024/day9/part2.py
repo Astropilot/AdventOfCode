@@ -87,4 +87,4 @@ for file_block in [b for b in blocks if b.block_type == "file"]:
     for i in range(file_block.position, file_block.position + file_block.size):
         checksum += i * file_block.file_id
 
-print(f"Result: {checksum}")  # Result: 6448168620520
+print(f"Result: {checksum}")

@@ -47,4 +47,4 @@ for y in range(height):
         if is_tree_visible(x, y):
             total_trees_visible += 1
 
-print(f"Result: {total_trees_visible}")  # Result: 1792
+print(f"Result: {total_trees_visible}")

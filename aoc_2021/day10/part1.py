@@ -20,4 +20,4 @@ for line in lines:
             break
         stack.pop()
 
-print(f"Result: {total_points}")  # Result: 299793
+print(f"Result: {total_points}")

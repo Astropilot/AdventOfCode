@@ -80,4 +80,4 @@ for region in regions:
 
     total_price += area * sides
 
-print(f"Result: {total_price}")  # Result: 821428
+print(f"Result: {total_price}")

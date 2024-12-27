@@ -119,6 +119,6 @@ if loop is not None:
         res = loop[0] + 1 + (loop[1] * i)
         i += 1
     res -= 1000000000
-    print(f"Result: {seq[loop[0] + loop[1] - res]}")  # Result: 85175
+    print(f"Result: {seq[loop[0] + loop[1] - res]}")
 else:
     print("ERROR!")

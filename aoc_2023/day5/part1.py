@@ -64,4 +64,4 @@ for seed in seeds:
     if min_location == -1 or location < min_location:
         min_location = location
 
-print(f"Result: {min_location}")  # Result: 379811651
+print(f"Result: {min_location}")

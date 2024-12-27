@@ -105,4 +105,4 @@ for y in range(len(map_count)):
     if e > max_tiles_energized:
         max_tiles_energized = e
 
-print(f"Result: {max_tiles_energized}")  # Result: 8148
+print(f"Result: {max_tiles_energized}")

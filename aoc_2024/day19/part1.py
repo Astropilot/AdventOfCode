@@ -37,4 +37,4 @@ for design in designs:
     if check_design(design, 0, patterns, memory):
         design_possibles += 1
 
-print(f"Result: {design_possibles}")  # Result: 290
+print(f"Result: {design_possibles}")

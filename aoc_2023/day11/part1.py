@@ -43,4 +43,4 @@ for galaxy1, galaxy2 in combinations(galaxies, 2):
 
     sum_paths += d
 
-print(f"Result: {sum_paths}")  # Result: 9623138
+print(f"Result: {sum_paths}")

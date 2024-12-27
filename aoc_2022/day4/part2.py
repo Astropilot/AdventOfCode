@@ -20,4 +20,4 @@ for line in lines:
     ):
         total_pairs_overlap += 1
 
-print(f"Result: {total_pairs_overlap}")  # Result: 874
+print(f"Result: {total_pairs_overlap}")

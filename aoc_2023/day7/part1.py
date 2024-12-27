@@ -71,4 +71,4 @@ sum_winnings = 0
 for rank, h in enumerate(hands, 1):
     sum_winnings += h[1] * rank
 
-print(f"Result: {sum_winnings}")  # Result: 249748283
+print(f"Result: {sum_winnings}")

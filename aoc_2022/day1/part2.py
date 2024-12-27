@@ -17,4 +17,4 @@ calories.append(sum_calories)
 calories.sort(reverse=True)
 result = sum(calories[:3])
 
-print(f"Result: {result}")  # Result: 206780
+print(f"Result: {result}")

@@ -39,4 +39,4 @@ for line in lines:
         if is_ok:
             sum_arrangements += 1
 
-print(f"Result: {sum_arrangements}")  # Result: 6827
+print(f"Result: {sum_arrangements}")

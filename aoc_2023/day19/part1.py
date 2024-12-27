@@ -61,4 +61,4 @@ for ratings in parts_lines.split("\n"):
         for v in rating.values():
             total_parts += v
 
-print(f"Result: {total_parts}")  # Result: 434147
+print(f"Result: {total_parts}")

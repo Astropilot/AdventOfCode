@@ -27,4 +27,4 @@ for cycle in range(1, 220 + 1, 1):
     last_count = int(lines[i_program].split(" ")[1])
     i_program += 1
 
-print(f"Result: {sum_signal_strength}")  # Result: 13440
+print(f"Result: {sum_signal_strength}")

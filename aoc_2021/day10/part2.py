@@ -34,4 +34,4 @@ for line in lines:
 
 scores.sort()
 
-print(f"Result: {scores[len(scores)//2]}")  # Result: 3654963618
+print(f"Result: {scores[len(scores)//2]}")

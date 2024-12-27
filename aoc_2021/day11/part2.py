@@ -56,7 +56,7 @@ while True:
                 grid[y][x] = 0
 
     if len(total_flashed) == TOTAL_SIZE:
-        print(f"Result: {step}")  # Result: 220
+        print(f"Result: {step}")
         break
 
     step += 1

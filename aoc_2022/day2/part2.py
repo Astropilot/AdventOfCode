@@ -23,4 +23,4 @@ for line in lines:
 
     total_score += score
 
-print(f"Result: {total_score}")  # Result: 12091
+print(f"Result: {total_score}")

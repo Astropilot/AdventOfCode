@@ -16,4 +16,4 @@ for line in lines:
 calories.append(sum_calories)
 calories.sort(reverse=True)
 
-print(f"Result: {calories[0]}")  # Result: 69626
+print(f"Result: {calories[0]}")

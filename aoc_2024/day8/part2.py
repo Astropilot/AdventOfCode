@@ -61,4 +61,4 @@ for antennas in antennas_by_frequency.values():
                 else:
                     break
 
-print(f"Result: {len(antinodes)}")  # Result: 958
+print(f"Result: {len(antinodes)}")

@@ -87,4 +87,4 @@ while not queue.empty():
         for v in previouses[u]:
             queue.put(v)
 
-print(f"Result: {len(tiles)}")  # Result: 471
+print(f"Result: {len(tiles)}")

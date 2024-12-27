@@ -23,4 +23,4 @@ for line in contents.split("\n"):
     numbers = transform_spelling(line)
     sum_calib += (numbers[0] * 10) + numbers[-1]
 
-print(f"Result: {sum_calib}")  # Result: 54265
+print(f"Result: {sum_calib}")

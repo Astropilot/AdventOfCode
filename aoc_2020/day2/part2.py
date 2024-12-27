@@ -14,4 +14,4 @@ for line in lines:
     ) and password[pos_1 - 1] != password[pos_2 - 1]:
         passwords_valid += 1
 
-print(f"Result: {passwords_valid}")  # Result: 747
+print(f"Result: {passwords_valid}")

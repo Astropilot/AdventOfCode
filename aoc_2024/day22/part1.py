@@ -24,4 +24,4 @@ for seed in seeds:
 
     total_secrets += secret
 
-print(f"Result: {total_secrets}")  # Result: 18261820068
+print(f"Result: {total_secrets}")

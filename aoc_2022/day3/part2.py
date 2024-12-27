@@ -18,4 +18,4 @@ for i in range(0, len(lines), 3):
 
     total_priority += priority[next(iter(inter))]
 
-print(f"Result: {total_priority}")  # Result: 2569
+print(f"Result: {total_priority}")

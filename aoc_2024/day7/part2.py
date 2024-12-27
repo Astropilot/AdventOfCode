@@ -34,4 +34,4 @@ for line in lines:
     if check_equation(equation_nbs, test, 1, equation_nbs[0]):
         total_test += test
 
-print(f"Result: {total_test}")  # Result: 227615740238334
+print(f"Result: {total_test}")

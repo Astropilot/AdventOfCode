@@ -86,4 +86,4 @@ for idx_tile, tile in enumerate(path):
         if saved >= 100:
             count_highest_cheats += 1
 
-print(f"Result: {count_highest_cheats}")  # Result: 997879
+print(f"Result: {count_highest_cheats}")

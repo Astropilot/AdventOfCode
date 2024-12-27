@@ -34,4 +34,4 @@ for n in numbers:
         sum_numbers += n[2]
 
 
-print(f"Result: {sum_numbers}")  # Result: 525181
+print(f"Result: {sum_numbers}")

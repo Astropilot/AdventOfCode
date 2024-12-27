@@ -31,4 +31,4 @@ for report in reports:
     if is_report_safe:
         report_counter += 1
 
-print(f"Result: {report_counter}")  # Result: 459
+print(f"Result: {report_counter}")

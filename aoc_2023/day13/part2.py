@@ -76,4 +76,4 @@ for block in blocks:
     else:
         sum_patterns += cols
 
-print(f"Result: {sum_patterns}")  # Result: 40995
+print(f"Result: {sum_patterns}")

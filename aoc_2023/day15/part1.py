@@ -19,4 +19,4 @@ sum_hash = 0
 for step in contents.split(","):
     sum_hash += hash_algo(step)
 
-print(f"Result: {sum_hash}")  # Result: 517015
+print(f"Result: {sum_hash}")

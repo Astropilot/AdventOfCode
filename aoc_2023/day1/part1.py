@@ -7,4 +7,4 @@ for line in contents.split("\n"):
     numbers = list(filter(str.isdigit, line))
     sum_calib += int(numbers[0] + numbers[-1])
 
-print(f"Result: {sum_calib}")  # Result: 54450
+print(f"Result: {sum_calib}")

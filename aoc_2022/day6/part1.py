@@ -9,4 +9,4 @@ for i in range(4, len(contents), 1):
         i_marker = i
         break
 
-print(f"Result: {i_marker}")  # Result: 1275
+print(f"Result: {i_marker}")

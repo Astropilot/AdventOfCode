@@ -86,4 +86,4 @@ folder_to_remove = find_folder_to_remove(root, space_to_free)
 
 assert folder_to_remove is not None
 
-print(f"Result: {folder_to_remove.size}")  # Result: 4978279
+print(f"Result: {folder_to_remove.size}")

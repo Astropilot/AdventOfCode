@@ -11,4 +11,4 @@ distance = sum(
     abs(left - right) for left, right in zip(left_list, right_list, strict=True)
 )
 
-print(f"Result: {distance}")  # Result: 3569916
+print(f"Result: {distance}")

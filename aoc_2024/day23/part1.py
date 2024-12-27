@@ -21,4 +21,4 @@ for pc in adj_list:
 
 results = [s for s in sets if any(pc[0] == "t" for pc in s)]
 
-print(f"Result: {len(results)}")  # Result: 1337
+print(f"Result: {len(results)}")

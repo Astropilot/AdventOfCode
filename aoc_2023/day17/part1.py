@@ -82,4 +82,4 @@ else:
             print(m[y][x], end="")
         print()
 
-    print(f"Result {heat_loss}")  # Result:
+    print(f"Result {heat_loss}")

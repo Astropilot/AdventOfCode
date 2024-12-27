@@ -46,4 +46,4 @@ def resolve_ra(program: list[int]) -> int | None:
     return min(candidates)
 
 
-print(f"Result: {resolve_ra(program)}")  # Result: 236580836040301
+print(f"Result: {resolve_ra(program)}")

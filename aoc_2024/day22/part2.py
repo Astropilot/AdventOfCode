@@ -39,4 +39,4 @@ for seed in seeds:
 
 best_sequence = max(sequences_to_prices, key=lambda k: sequences_to_prices[k])
 
-print(f"Result: {sequences_to_prices[best_sequence]}")  # Result: 2044
+print(f"Result: {sequences_to_prices[best_sequence]}")

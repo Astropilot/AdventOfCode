@@ -63,4 +63,4 @@ while i < len(lines):
 if check_valid_passport(current_passport):
     valid_passports += 1
 
-print(f"Result: {valid_passports}")  # Result: 140
+print(f"Result: {valid_passports}")

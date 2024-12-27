@@ -41,4 +41,4 @@ for antennas in antennas_by_frequency.values():
             if (0 <= antinode2.x < width) and (0 <= antinode2.y < height):
                 antinodes.add(antinode2)
 
-print(f"Result: {len(antinodes)}")  # Result: 280
+print(f"Result: {len(antinodes)}")

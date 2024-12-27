@@ -52,4 +52,4 @@ for line in lines:
                 tail_visited.add(tail)
 
 
-print(f"Result: {len(tail_visited)}")  # Result: 6190
+print(f"Result: {len(tail_visited)}")

@@ -66,4 +66,4 @@ for line in lines:
     sum_arrangements += arrangements
 
 
-print(f"Result: {sum_arrangements}")  # Result: 1537505634471
+print(f"Result: {sum_arrangements}")

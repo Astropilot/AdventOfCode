@@ -108,4 +108,4 @@ while ip <= len(program) - 2:
             raise ValueError(f"Illegal opcode: {opcode}")
 
 
-print(f"Result: {','.join(map(str, output))}")  # Result: 2,0,1,3,4,0,2,1,7
+print(f"Result: {','.join(map(str, output))}")

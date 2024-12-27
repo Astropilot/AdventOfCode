@@ -19,4 +19,4 @@ for expense1 in expenses:
     if result is not None:
         break
 
-print(f"Result: {result}")  # Result: 236873508
+print(f"Result: {result}")

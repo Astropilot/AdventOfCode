@@ -22,4 +22,4 @@ while current_node != "ZZZ":
     current_node = mapping[current_node][instruction]
     steps += 1
 
-print(f"Result: {steps}")  # Result: 22357
+print(f"Result: {steps}")

@@ -22,4 +22,4 @@ for line in contents.split("\n"):
     if not impossible:
         sum_game_ids += game_id
 
-print(f"Result: {sum_game_ids}")  # Result: 2447
+print(f"Result: {sum_game_ids}")

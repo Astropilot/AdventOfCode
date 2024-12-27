@@ -22,4 +22,4 @@ while start.y < HEIGHT:
     if start.y < HEIGHT and grid[start.y][start.x] == "#":
         trees_encountered += 1
 
-print(f"Result: {trees_encountered}")  # Result: 268
+print(f"Result: {trees_encountered}")

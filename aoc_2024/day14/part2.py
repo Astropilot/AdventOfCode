@@ -49,4 +49,4 @@ for i in range(1, width * height + 1):
         min_dis = d
         min_i = i
 
-print(f"Result: {min_i}")  # Result: 8087
+print(f"Result: {min_i}")

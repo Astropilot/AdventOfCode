@@ -39,4 +39,4 @@ while any(pos.y < HEIGHT for pos in slopes_positions):
             trees_encountered[i_slopes] += 1
 
 
-print(f"Result: {math.prod(trees_encountered)}")  # Result: 3093068400
+print(f"Result: {math.prod(trees_encountered)}")

@@ -50,4 +50,4 @@ for box_id, lenses in boxes.items():
     for lens_slot, lens in enumerate(lenses, 1):
         sum_focusing_power += (1 + box_id) * lens_slot * lens[1]
 
-print(f"Result: {sum_focusing_power}")  # Result: 286104
+print(f"Result: {sum_focusing_power}")

@@ -110,4 +110,4 @@ while i < 1000 + 1:
 
     i += 1
 
-print(f"Result: {low_signal_count * high_signal_count}")  # Result: 788081152
+print(f"Result: {low_signal_count * high_signal_count}")

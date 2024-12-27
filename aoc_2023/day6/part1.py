@@ -24,4 +24,4 @@ for i in range(len(times)):
     sum_races *= ways_to_win
 
 
-print(f"Result: {sum_races}")  # Result: 170000
+print(f"Result: {sum_races}")

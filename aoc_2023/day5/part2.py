@@ -39,4 +39,4 @@ for block in lines_blocks[1:]:
 
     ranges = next_ranges
 
-print(f"Result {min(low for low, _ in ranges)}")  # Result: 27992443
+print(f"Result {min(low for low, _ in ranges)}")

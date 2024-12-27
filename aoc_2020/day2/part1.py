@@ -13,4 +13,4 @@ for line in lines:
     if min_letter <= letter_count <= max_letter:
         passwords_valid += 1
 
-print(f"Result: {passwords_valid}")  # Result: 424
+print(f"Result: {passwords_valid}")

@@ -41,4 +41,4 @@ for bit_idx in range(1, len(lines[0])):
 
 result = int(candidates_oxy[0], 2) * int(candidates_co2[0], 2)
 
-print(f"Result: {result}")  # Result: 4790390
+print(f"Result: {result}")

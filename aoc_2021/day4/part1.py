@@ -67,4 +67,4 @@ for number in numbers_to_draw:
     if finished:
         break
 
-print(f"Result: {score}")  # Result: 25023
+print(f"Result: {score}")

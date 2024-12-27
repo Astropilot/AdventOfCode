@@ -24,4 +24,4 @@ for line in lines:
         case _:
             raise ValueError(f"Unknown direction: {direction}")
 
-print(f"Result: {submarine[0] * submarine[1]}")  # Result: 2078985210
+print(f"Result: {submarine[0] * submarine[1]}")

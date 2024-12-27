@@ -14,4 +14,4 @@ for t in range(time):
         ways_to_win += 1
 
 
-print(f"Result: {ways_to_win}")  # Result: 20537782
+print(f"Result: {ways_to_win}")

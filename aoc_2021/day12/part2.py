@@ -36,4 +36,4 @@ def count_path_from(cave: str, visited: set[str], exception: str | None) -> int:
 
 paths = count_path_from("start", set(), None)
 
-print(f"Result: {paths}")  # Result: 149385
+print(f"Result: {paths}")

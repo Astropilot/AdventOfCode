@@ -59,5 +59,5 @@ for line in lines[1024:]:
                 queue.append(neighbor)
 
     if destination not in previous:
-        print(f"Result: {x},{y}")  # Result: 44,64
+        print(f"Result: {x},{y}")
         break

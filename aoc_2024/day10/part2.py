@@ -37,4 +37,4 @@ for y in range(len(grid)):
         if grid[y][x] == 0:
             score += find_hiking_trails(x, y, 1)
 
-print(f"Result: {score}")  # Result: 1459
+print(f"Result: {score}")
