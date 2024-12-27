@@ -14,8 +14,3 @@ for line in contents.split("\n"):
     sum_power += max_colors["r"] * max_colors["g"] * max_colors["b"]
 
 print(f"Result: {sum_power}")  # Result: 56322
-
-# One liner (code golf for fun)
-# fmt: off
-print(sum([max(map(int,re.findall(r"(\d+) r",L)))*max(map(int,re.findall(r"(\d+) g",L)))*max(map(int,re.findall(r"(\d+) b",L)))for L in open("input")]))
-# fmt: on

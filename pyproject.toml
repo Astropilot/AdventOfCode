@@ -12,8 +12,8 @@ python = "^3.12"
 shapely = "^2.0.6"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.8.1"
-mypy = "^1.13.0"
+ruff = "^0.8.4"
+mypy = "^1.14.0"
 types-shapely = "^2.0.0.20241112"
 
 [build-system]
@@ -49,6 +49,8 @@ ignore = [
     "W191",  # indentation contains tabs
     "B904",  # Opinionated warning on exception chaining
     "S101",  # Asserts
+    "C901",  # Too complex
+    "E741",  # Ambiguous variable name
 ]
 
 [tool.ruff.format]

@@ -1,10 +1,10 @@
 from pathlib import Path
-from typing import Literal, TypeAlias
+from typing import Literal
 
 contents = Path(Path(__file__).parent, "input").read_text()
 lines = contents.split("\n")
 
-Direction: TypeAlias = Literal["up", "down", "left", "right"]
+type Direction = Literal["up", "down", "left", "right"]
 
 mapping: dict[Direction, tuple[int, int]] = {
     "up": (0, -1),

@@ -19,14 +19,14 @@ for line in contents.split("\n"):
     cards.append(card_worth)
 
 
-def countWinningCards(cards: list[int], idx: int) -> int:
+def count_winning_cards(cards: list[int], idx: int) -> int:
     if idx >= len(cards):
         return 0
 
     s = 1
 
     for i in range(1, cards[idx] + 1):
-        s += countWinningCards(cards, idx + i)
+        s += count_winning_cards(cards, idx + i)
 
     return s
 
@@ -34,6 +34,6 @@ def countWinningCards(cards: list[int], idx: int) -> int:
 result = 0
 
 for i in range(len(cards)):
-    result += countWinningCards(cards, i)
+    result += count_winning_cards(cards, i)
 
 print(f"Result: {result}")  # Result: 5625994

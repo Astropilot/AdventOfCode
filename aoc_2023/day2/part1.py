@@ -23,8 +23,3 @@ for line in contents.split("\n"):
         sum_game_ids += game_id
 
 print(f"Result: {sum_game_ids}")  # Result: 2447
-
-# One liner (code golf for fun)
-# fmt: off
-print(sum([int(re.findall(r'Game (\d+)',L)[0])for L in open("input")if max(map(int,re.findall(r'(\d+) r',L)))<=12 and max(map(int,re.findall(r'(\d+) g',L)))<=13 and max(map(int,re.findall(r'(\d+) b',L)))<=14]))
-# fmt: on

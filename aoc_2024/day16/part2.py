@@ -71,7 +71,7 @@ queue: Queue[Coords] = Queue()
 visited: set[Coords] = set()
 
 for direction in ("N", "E", "S", "W"):
-    e = Coords(end.x, end.y, direction)  # type: ignore
+    e = Coords(end.x, end.y, direction)
     if e in distance:
         queue.put(e)
 
