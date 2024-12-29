@@ -212,7 +212,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2018/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2018/day25)   |
 
-## \[2017] 12⭐
+## \[2017] 14⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -222,7 +222,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  4  |   ⭐   |   ⭐   |   [🔗](./aoc_2017/day4)    |
 |  5  |   ⭐   |   ⭐   |   [🔗](./aoc_2017/day5)    |
 |  6  |   ⭐   |   ⭐   |   [🔗](./aoc_2017/day6)    |
-|  7  |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day7)    |
+|  7  |   ⭐   |   ⭐   |   [🔗](./aoc_2017/day7)    |
 |  8  |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day8)    |
 |  9  |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day9)    |
 |  10 |   ⌛   |   ⌛   |   [🔗](./aoc_2017/day10)   |
