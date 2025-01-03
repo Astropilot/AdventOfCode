@@ -51,6 +51,8 @@ ignore = [
     "S101",  # Asserts
     "C901",  # Too complex
     "E741",  # Ambiguous variable name
+    "S324",  # md5
+    "S105",  # hardcoded-password-string
 ]
 
 [tool.ruff.format]
