@@ -152,7 +152,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  24 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day24)   |
 |  25 |   ⌛   |   ⌛   |   [🔗](./aoc_2020/day25)   |
 
-## \[2019] 6⭐
+## \[2019] 8⭐
 
 | Day | Part 1 | Part 2 |         Source link         |
 | :-: | :----: | :----: | :-------------------------: |
@@ -160,7 +160,7 @@ This repository contains my solutions in Python3 for the [Advent of Code](https:
 |  2  |   ⭐   |   ⭐   |   [🔗](./aoc_2019/day2)    |
 |  3  |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day3)    |
 |  4  |   ⭐   |   ⭐   |   [🔗](./aoc_2019/day4)    |
-|  5  |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day5)    |
+|  5  |   ⭐   |   ⭐   |   [🔗](./aoc_2019/day5)    |
 |  6  |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day6)    |
 |  7  |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day7)    |
 |  8  |   ⌛   |   ⌛   |   [🔗](./aoc_2019/day8)    |
