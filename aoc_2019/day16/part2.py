@@ -1,34 +1,24 @@
 from pathlib import Path
 
-input = [int(c) for c in Path(Path(__file__).parent, "sample").read_text()]
+input = [int(c) for c in Path(Path(__file__).parent, "input").read_text()]
 
+offset = int("".join(str(c) for c in input[:7]), base=10)
+input = input * 10000
+input = input[offset:]
 
-def compute_phase(input: list[int]) -> list[int]:
-    output: list[int] = []
+for _ in range(100):
+    output: list[int] = [0] * len(input)
 
-    for i in range(len(input)):
-        switch = i + 1
-        steps = i + 2
-        j = i
-        delta = 1
-        count = 1
-        n = 0
-        while j < len(input):
-            print(f"{input[j]} * {delta} = {input[j] * delta}")
-            n += input[j] * delta
+    n = 0
+    for j in range(len(input)):
+        n += input[j]
 
-            if count % switch == 0:
-                j += steps
-                delta *= -1
-            else:
-                j += 1
+    output[0] = n % 10
 
-            count += 1
-        output.append(abs(n) % 10)
+    for i in range(1, len(input)):
+        n = n - input[i - 1]
+        output[i] = n % 10
 
-    return output
+    input = output
 
-
-input = compute_phase(input)
-
-# Work In Progress
+print(f"Result: {''.join([str(n) for n in input[:8]])}")
