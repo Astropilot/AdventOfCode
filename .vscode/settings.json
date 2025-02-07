@@ -11,7 +11,4 @@
     "ruff.organizeImports": true,
     "python.analysis.typeCheckingMode": "off",
     "mypy.runUsingActiveInterpreter": true,
-    "ruff.lint.args": [
-        "--extend-exclude=/**/site-packages/**/*.py",
-    ]
 }
