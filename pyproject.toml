@@ -1,24 +1,19 @@
-[tool.poetry]
+[project]
 name = "adventofcode"
 version = "0.1.0"
 description = ""
-authors = ["Yohann MARTIN <contact@codexus.fr>"]
+authors = [
+    { email = "contact@codexus.fr", name = "Yohann MARTIN" }
+]
 license = "MIT"
 readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.12"
-shapely = "^2.0.6"
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.8.4"
-mypy = "^1.14.0"
-types-shapely = "^2.0.0.20241112"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "mypy>=1.17.1",
+    "ruff>=0.12.8",
+    "shapely>=2.1.1",
+    "types-shapely>=2.1.0.20250809",
+]
 
 [tool.mypy]
 strict = true

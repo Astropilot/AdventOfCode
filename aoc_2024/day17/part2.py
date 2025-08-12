@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import cast
 
 with Path(Path(__file__).parent, "input").open() as f:
     lines = [line.rstrip("\n") for line in f]
@@ -18,7 +19,7 @@ program = list(map(int, lines[4].removeprefix("Program: ").split(",")))
 def check_ra_match(ra: int, wanted: int) -> bool:
     rb = ra % 8
     rb = rb ^ 3
-    rc = ra // (2**rb)
+    rc = ra // cast(int, (2**rb))
     rb = rb ^ rc
     rb = rb ^ 5
 
