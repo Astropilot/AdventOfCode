@@ -8,7 +8,7 @@ with Path(Path(__file__).parent, "input").open() as f:
 
 def bron_kerbosch(
     r: set[str], p: set[str], x: set[str], adj_list: dict[str, set[str]]
-) -> Generator[set[str], Any, None]:
+) -> Generator[set[str], Any]:
     if not p and not x:
         yield r
     while p:

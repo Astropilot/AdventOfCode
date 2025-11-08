@@ -28,7 +28,7 @@ def compute_sequence(rating: int, adapters: frozenset[int]) -> list[int]:
 
 adapters.add(device_adapter)
 
-seq = [0] + compute_sequence(0, frozenset(adapters))[:-1]
+seq = [0, *compute_sequence(0, frozenset(adapters))[:-1]]
 
 diffs: list[int] = []
 for a1, a2 in pairwise(seq):
